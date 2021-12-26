@@ -82,7 +82,7 @@ void menu()        //menu
       {
         j++;
       }
-      delay(3);
+//      delay(3);
       if(i==120)
       {
         m5.Lcd.setCursor(42,62);
@@ -98,7 +98,7 @@ void menu()        //menu
       {
         k++;
       }
-      delay(3);
+//      delay(3);
       if(i==120)
       {
         m5.Lcd.setCursor(202,62);
@@ -114,7 +114,7 @@ void menu()        //menu
       {
         p++;
       }
-      delay(3);
+//      delay(3);
       if(i==120)
       {
         m5.Lcd.setCursor(42,202);
@@ -158,10 +158,21 @@ void rubber(unsigned int startx,unsigned int starty,int sizx,int sizy,uint32_t c
 void vbutton()
   {
   M5.Lcd.setTextColor(GREEN,BLACK);
-  m5.Lcd.setCursor(100,120);
-  M5.Lcd.setTextSize(1);
-  M5.Lcd.drawRect(80,50,110,80,RED);
-  M5.Lcd.print("Runing"); 
+//  m5.Lcd.setCursor(100,120);
+//  M5.Lcd.setTextSize(1);
+//  M5.Lcd.drawRect(80,50,110,80,RED);
+//  M5.Lcd.print("Runing"); 
+//  m5.Lcd.setCursor(100,150);
+  M5.Lcd.setTextSize(2);
+  m5.Lcd.setCursor(150,60);
+  M5.Lcd.drawCircle(165,40,30,RED);
+  M5.Lcd.print("☝");
+  m5.Lcd.setCursor(50,170);
+  M5.Lcd.drawCircle(70,155,30,RED);
+  M5.Lcd.print("☜"); 
+  m5.Lcd.setCursor(210,170);
+  M5.Lcd.drawCircle(230,155,30,RED);
+  M5.Lcd.print("☞"); 
   }
 
  void part1()
